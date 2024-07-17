@@ -8,18 +8,19 @@ class TravelCard extends StatelessWidget {
   final String totalBudget;
 
   const TravelCard({
-    Key? key,
+    super.key,
     required this.location,
     required this.date,
     required this.totalBudget,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
+    final double generalSize = MediaQuery.of(context).size.width / 2;
     return Container(
       margin: const EdgeInsets.all(8.0),
-      height: 170,
-      width: MediaQuery.of(context).size.width / 2 - 20,
+      height: generalSize - 30,
+      width: generalSize - 20,
       child: Stack(
         children: [
           Container(
