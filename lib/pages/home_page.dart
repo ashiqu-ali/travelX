@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travelx/pages/add_new_trip.dart';
 import '../constants/colors.dart';
 import '../constants/fonts.dart';
 import '../widgets/travel_card.dart';
@@ -23,6 +24,10 @@ class HomePage extends StatelessWidget {
             ],
           )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const AddNewTrip())),
+        child: const Icon(Icons.add),
       ),
     );
   }

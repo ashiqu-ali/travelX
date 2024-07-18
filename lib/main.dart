@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../pages/home_page.dart';
+import 'package:travelx/pages/home_page.dart';
+
 
 main(){
   runApp(const MyApp());
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       home: const HomePage(),
       theme: ThemeData(
         useMaterial3: true,
-        fontFamily: 'GoogleFonts'
+        fontFamily: 'GoogleFonts',
+        primaryColor: Color(0xFFFC7B69)
       ),
     );
   }
